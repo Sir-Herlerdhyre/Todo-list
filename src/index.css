@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(172, 103, 103);
+  margin: 0;
+  padding: 0;
+}
+.task-list {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 5rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  max-width: 500px;
+  color: grey;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+button {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in;
+}
+
+.add-task-button {
+  background-color: green;
+  padding: 1rem 2rem;
+}
+
+.add-task-button:hover,
+.done-button:hover {
+  background-color: rgba(94, 231, 15, 0.514);
+}
+
+.delete-button {
+  background-color: grey;
+}
+.done-button {
+  background-color: green;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 0.5rem;
+  background-color: rgb(219, 211, 211);
+  margin-bottom: 0.5rem;
+  border: 0.2rem solid grey;
+  border-color: grey;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  word-break: break-word;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.delete-button,
+.done-button {
+  padding: 0.5rem 0.6rem;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.text.done {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+  color: grey;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text {
+    flex: 1 1 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .delete-button,
+  .done-button {
+    margin: 0.2rem 0.2rem;
+  }
+}
